@@ -10,7 +10,7 @@ Seeking a **work-study placement** in Global Markets / Quantitative Finance (Fix
 |---|---|---|
 | [Nelson-Siegel-Svensson calibration](https://github.com/Target-Justin/nelson-siegel-svensson-oat-calibration) | NS/NSS fitted on French OATs and 13 €STR/SOFR OIS curves (1W–50Y). NS fails on long maturities (43 bp median max error) while NSS stays under 5 bp; two independent calibration methods agree within 0.01 bp. | Python, SciPy, Pandas |
 | [Zero-coupon yield curve bootstrap](https://github.com/Target-Justin/Zero-Coupon-Yield-Curve-Bootstrap) | From-scratch bootstrap of 19 French OATs and 13 OIS curves. Matches QuantLib within 0.25 bp on OATs and 10⁻⁷ bp on OIS. | Python, Pandas, QuantLib |
-| [PONAX audit forecasting][(https://github.com/Target-Justin/ponax-audit-forecasting)] | Bond factors (TERM, DEF) built from FRED raise adjusted R² from 0.52 to 0.67 vs Fama-French; Jensen's alpha not significant. ARMA backtest: past returns do not beat the historical mean. | Python, statsmodels, pandas |
+| [PONAX audit forecasting](https://github.com/Target-Justin/ponax-audit-forecasting) | Bond factors (TERM, DEF) built from FRED raise adjusted R² from 0.52 to 0.67 vs Fama-French; Jensen's alpha not significant. ARMA backtest: past returns do not beat the historical mean. | Python, statsmodels, pandas |
 
 🚧 **In progress: Hull-White short rate model.** Step 1 done: Vasicek simulation validated against closed-form moments, zero-coupon pricing. Next: Hull-White calibration to the curve, then maximum-likelihood estimation.
 
